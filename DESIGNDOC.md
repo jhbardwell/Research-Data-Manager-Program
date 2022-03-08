@@ -31,17 +31,11 @@ Centralize research documents within a single folder. Design network of article,
 - Lessen the personnel-hour burden of research pdf information retrieval
 - Strike an acceptable compromise between backend system automation and frontend user input flexibility
 - Make the system easy to use and hard to break
-## Features
-### Critical Implemented
-### Critical Unimplemented
-- ddddd
-### Wishlist Unimplemented
-- ddddd
 ## User Process
 - flowchart
 ## System Architecture
 - class chart
-## Schedule
+## Development Schedule
 ```mermaid
 gantt
     dateFormat  YYYY-MM-DD
@@ -76,5 +70,11 @@ gantt
 ```
 ## Responsibilities
 - keyed list (uml seq diagram)
+## Features
+### Critical Implemented
+### Critical Unimplemented
+- ddddd
+### Wishlist Unimplemented
+- ddddd
 ## Reference Code
 - [Template Literals](https://www.youtube.com/watch?v=DG4obitDvUA&t=2069s)
