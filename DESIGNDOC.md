@@ -37,12 +37,11 @@ Centralize research documents within a single folder. Design network of article,
 - ddddd
 ### Wishlist Unimplemented
 - ddddd
-## Development
-### Process
+## User Process
 - flowchart
-### Architecture
+## System Architecture
 - class chart
-### Schedule
+## Schedule
 ```mermaid
 gantt
     dateFormat  YYYY-MM-DD
