@@ -3,11 +3,24 @@
 A research article PDF electronic filing system is antiquated and difficult to use.
 ## Problem
 Users waste precious time hunting documents spread across small overlapping categorical folders to track down each PDF manually, then must visually scan the document to determine by ad hoc metrics if those contents match their needs.
-## Solutions
-### Existing
-Manual file search and sort
-### Proposal 1
-Encode asset content and schedule metadata as object literals. Create JavaScript algorithm comparing pending to prior weekly contents. Make HTML template literals. Insert algorithm output. Update schedule metadata. Autogenerate newsletter HTML.
+## Options
+### File Organizing
+- Decentralized file subfolder organization system [current]
+- Centralize research documents within a single folder
+### File searching
+- Manual file search and sort [current]
+- Implement search algorithm using keyword lists
+- Implement search algorithm using key:vale metadata
+### Data Organizing
+- Encode minimal article data in PDF file names [current]
+- Encode article data as object literals
+- Encode article data as JSON 
+### Data Updating
+- None [current]
+- Manually update data
+- Implement webscraper to update data
+## Solution
+Centralize research documents within a single folder. Design network of article, author, organization, and grant metadata to be accessed by HTML card catalog. Create a JavaScript algorithm to accept catalog search input, filter documents based on metadata 	keywords, sort results by match strength, then output a PDF hyperlinks ranked list.
 ## Goals
 - Lessen the personnel-hour burden of research pdf information retrieval
 - Strike an acceptable compromise between backend system automation and frontend user input flexibility
@@ -18,11 +31,12 @@ Encode asset content and schedule metadata as object literals. Create JavaScript
 - ddddd
 ### Wishlist Unimplemented
 - ddddd
-## Architecture
-
-## Reference Code
-- [Template Literals](https://www.youtube.com/watch?v=DG4obitDvUA&t=2069s)
-## Schedule
+## Development
+### Process
+- flowchart
+### Architecture
+- class chart
+### Schedule
 ```mermaid
 gantt
     dateFormat  YYYY-MM-DD
@@ -55,3 +69,8 @@ gantt
     Add gantt diagram to demo page      :20h
     Add another diagram to demo page    :48h
 ```
+### Responsibilities
+- keyed list
+
+## Reference Code
+- [Template Literals](https://www.youtube.com/watch?v=DG4obitDvUA&t=2069s)
