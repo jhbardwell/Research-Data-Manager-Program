@@ -4,18 +4,18 @@ A research article PDF electronic filing system is antiquated and difficult to u
 ## Problem
 Users waste precious time hunting documents spread across small overlapping categorical folders to track down each PDF manually, then must visually scan the document to determine by ad hoc metrics if those contents match their needs.
 ## Options
-### File Organizing
+### File Organization
 - Decentralized file subfolder organization system [current]
 - Centralize research documents within a single folder
-### File searching
-- Manual file search and sort [current]
-- Implement search algorithm using keyword lists
-- Implement search algorithm using key:vale metadata
-### Data Organizing
+### File Search and Sort
+- Manual [current]
+- Implement algorithm using keyword lists
+- Implement algorithm using key:vale metadata
+### File Data Organization
 - Encode minimal article data in PDF file names [current]
 - Encode article data as object literals
 - Encode article data as JSON 
-### Data Updating
+### File Data Updates
 - None [current]
 - Manually update data
 - Implement webscraper to update data
