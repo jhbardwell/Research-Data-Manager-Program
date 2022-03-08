@@ -3,6 +3,12 @@
 A research article PDF electronic filing system is antiquated and difficult to use.
 ## Problem
 Users waste precious time hunting documents spread across small overlapping categorical folders to track down each PDF manually, then must visually scan the document to determine by ad hoc metrics if those contents match their needs.
+## Goals
+- Automate repetitive tasks
+- Compromise between automation rigidity and input flexibility
+- Make system easy to use and hard to break
+- Optimize time management
+- Organize and properly archive data
 ## Options
 ### File Organization
 - Decentralized file subfolder organization system [current]
