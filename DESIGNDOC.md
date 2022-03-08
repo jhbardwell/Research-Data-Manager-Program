@@ -75,6 +75,6 @@ gantt
     Add another diagram to demo page    :48h
 ```
 ## Responsibilities
-- keyed list
+- keyed list (uml seq diagram)
 ## Reference Code
 - [Template Literals](https://www.youtube.com/watch?v=DG4obitDvUA&t=2069s)
