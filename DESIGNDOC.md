@@ -27,10 +27,6 @@ Users waste precious time hunting documents spread across small overlapping cate
 - Implement webscraper to update data
 ## Solution
 Centralize research documents within a single folder. Design network of article, author, organization, and grant metadata to be accessed by HTML card catalog. Create a JavaScript algorithm to accept catalog search input, filter documents based on metadata 	keywords, sort results by match strength, then output a PDF hyperlinks ranked list.
-## Goals
-- Lessen the personnel-hour burden of research pdf information retrieval
-- Strike an acceptable compromise between backend system automation and frontend user input flexibility
-- Make the system easy to use and hard to break
 ## User Process
 - flowchart
 ## System Architecture
