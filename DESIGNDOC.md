@@ -74,8 +74,7 @@ gantt
     Add gantt diagram to demo page      :20h
     Add another diagram to demo page    :48h
 ```
-### Responsibilities
+## Responsibilities
 - keyed list
-
 ## Reference Code
 - [Template Literals](https://www.youtube.com/watch?v=DG4obitDvUA&t=2069s)
