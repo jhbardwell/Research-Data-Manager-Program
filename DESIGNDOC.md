@@ -10,7 +10,7 @@ Users waste precious time hunting documents spread across small overlapping cate
 ### File Search and Sort
 - Manual [current]
 - Implement algorithm using keyword lists
-- Implement algorithm using key:vale metadata
+- Implement algorithm using key:value metadata
 ### File Data Organization
 - Encode minimal article data in PDF file names [current]
 - Encode article data as object literals
