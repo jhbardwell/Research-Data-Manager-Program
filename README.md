@@ -17,7 +17,7 @@ Do you wish to see the current project demonatration? Experience it for yourself
 To install, clone the repository and then execute the program by running "clickme.html"
 # ![Bugs](/images/bugs.png)Bugs
 Please report all bugs here
-# ![Design](/images/designs.png)Design
+# ![Design](/images/design.png)Design
 Are you craving the details of design? [This file](DESIGNDOC.md) documents the development goals, system architexture, and schedule of this project.
 # ![Roadmap](/images/roadmap.png)Roadmap
 ## Stage 1 - Plan
