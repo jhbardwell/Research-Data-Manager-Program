@@ -47,7 +47,7 @@ Are you craving the details of design? [This file](DESIGNDOC.md) documents the d
 - [ ] No current plans
 ## Stage 4 - Post
 - [ ] No current plans
-# ![License](/images/licenses.png)License
+# ![License](/images/license.png)License
 - MIT
 # ![People](/images/people.png)People
 ## Contributors
