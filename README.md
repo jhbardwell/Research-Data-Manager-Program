@@ -1,6 +1,6 @@
 ![Readme Header](/images/header.png)
 
-A system to catalog, sort, manage, and filter research journal article pdf metadata
+A virtual library to catalog, sort, and manage research journal article metadata
 
 [![Maintenance](https://img.shields.io/badge/Maintained-yes-green.svg)](https://github.com/jhbardwell/Newsletter-Concatenator-Program)
 
