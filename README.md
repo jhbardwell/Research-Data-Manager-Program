@@ -1,4 +1,5 @@
 ![Readme Header](/images/header.png)
+
 A system to catalog, sort, manage, and filter research document pdf metadata
 
 [![Maintenance](https://img.shields.io/badge/Maintained-yes-green.svg)](https://github.com/jhbardwell/Newsletter-Concatenator-Program)
