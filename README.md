@@ -1,4 +1,4 @@
-<center><img src="/images/header.png"></center>
+![Readme Header](/images/header.png)
 
 A virtual library to catalog, sort, and manage research journal article metadata
 
