@@ -59,6 +59,6 @@ Are you craving the details of design? [This file](DESIGNDOC.md) documents the d
 ## Investors
 If this project piques your interest, you can invest here
 # ![Newsletter](/images/newsletter.png)Newsletter
-Do you want to hear about ongoing app developments and exciting new projects? Then sign up here.
+Do you want to hear about ongoing app developments and exciting new projects? Then sign up [here](https://jeffreybardwell.com/sendy/subscription?f=6x4w4Uh71014jJOESdfio6xcewae763pRAzSfj7irZuWdB8L8892O9A892xV6qp892juL1LRkvjEzZEC7oYmFBh5HYNmOw).
 # ![Contact](/images/contact.png)Contact
 Please address all questions, comments, and concerns [here](jhbardwell@gmail.com)
