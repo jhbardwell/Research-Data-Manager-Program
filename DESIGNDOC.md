@@ -96,20 +96,23 @@ gantt
     
     section Plan
     Define problem scope      :done,  scope, 2021-10-06,5d
-    Define target user        :done,  user, 2021-10-08, 5d
-    Draft readme              :done,  readmedraft, after user, 6d
-    Iterate readme            :done,  readmeiterate, 2021-11-16, 5d
-    Draft designdoc           :done,  designdocdraft, after readmedraft, 5d
-    Draft architecture        :done,  archituredraft, 2021-12-02, 3d
-    Code architecture         :done,  architurecode, 2022-03-09, 3d
-    Draft gantt chart         :done,  ganttdraft, 2021-11-25, 4d
-    Code gantt chart          :done,  ganttcode, 2022-03-10, 3d
+    Define target user          :done,  user, 2021-10-08, 5d
+    Draft readme                :done,  readmedraft, after user, 6d
+    Iterate readme              :done,  readmeiterate, 2021-11-16, 5d
+    Draft designdoc             :done,  designdocdraft, after readmedraft, 5d
+    Draft architecture          :done,  archituredraft, 2021-12-02, 3d
+    Code architecture           :done,  architurecode, 2022-03-09, 3d
+    Draft gantt chart           :done,  ganttdraft, 2021-11-25, 4d
+    Code gantt chart            :done,  ganttcode, 2022-03-10, 3d
     
     section Prototype
-    Create sample databases    :done, databasecreate, 2021-11-05, 15d
-    Create filter algorithm    :done, algofiltercreate, 2022-01-10, 3d
-    Iterate filter algorithm   :done, algofilteriterate, algofiltercreate, 4d
-    Create main program        :done, maincreate, 2022-03-10, 3d
+    Create author database      :done, authordbcreate, 2021-11-05, 2021-12-30
+    Create article database     :done, articledbcreate, 2021-11-05, 2021-12-30
+    Create org database         :done, organizationdbcreate, 2021-11-05, 2021-12-30
+    Create grant database       :active, grantdbcreate, 2022-03-05, 2022-03-14
+    Create filter algorithm     :done, algofiltercreate, 2022-01-10, 3d
+    Iterate filter algorithm    :done, algofilteriterate, algofiltercreate, 4d
+    Create main program         :done, maincreate, 2022-03-10, 3d
     
     section Prune
     Softcode filter algorithm   :active, algofiltersoftcode, 2022-03-15, 3d
