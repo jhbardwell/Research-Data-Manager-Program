@@ -106,11 +106,11 @@ gantt
     Code gantt chart            :done,  ganttcode, 2022-03-10, 3d
     
     section Prototype
-    Catalog research articles   :active, pdfcatalog, 2021-10-01, 2022-01-05
+    Collect research articles   :active, pdfcollect, 2021-10-01, 2022-01-05
     Create author database      :done, authordbcreate, 2021-11-05, 2021-12-30
     Create article database     :done, articledbcreate, 2021-11-05, 2021-12-30
     Create org database         :done, organizationdbcreate, 2021-11-05, 2021-12-30
-    Create grant database       :active, grantdbcreate, 2022-03-05, 2022-03-14
+    Create grant database       :active, grantdbcreate, 2022-03-01, 2022-03-14
     Create filter algorithm     :done, algofiltercreate, 2022-01-10, 3d
     Iterate filter algorithm    :done, algofilteriterate, algofiltercreate, 4d
     Create main program         :done, maincreate, 2022-03-10, 3d
