@@ -30,39 +30,80 @@ Centralize research documents within a single folder. Design network of article,
 ## User Process
 - flowchart
 ## System Architecture
-- class chart
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': 
+{ 'primaryColor': '#DDDA4D', 'edgeLabelBackground':'#F7F6DA', 'tertiaryColor': '#D5DEF6'}}}%%
+flowchart LR
+  %%relationships
+   ddd
+   %% structure
+   subgraph MAIN [Main Loop]
+      fxnenterdataauto
+      fxnenterdatamanual
+      fxngarbagecollection
+      fxnrender
+      fxnsearchdataauto
+      fxnupdatedataauto
+      end
+   subgraph EVENTS [Event Queue]
+      event
+      end
+   subgraph GUI [GUI]
+      buttonenterdata{Enter Data Button}
+      buttonsearchdata{Search Data Button}
+      formarticle{Article Metadata Form}
+      formauthor{Author Metadata Form}
+      formgrant{Grant Metadata Form}
+      formorganization{Organization Metadata Form}
+      end 
+   subgraph DATABASES [Databases]
+     databasearticle[(Article Metadata)]
+     databaseauthor[(Author Metadata)]
+     databaseorganization[(Organization Metadata)]
+     databasegrant[(Grant Metadata)]
+     end
+   subgraph WEBSCRAPERS [Webscrapers]
+     articlescraper[[Article Metadata Scrapers]]
+     authorcraper[[Author Metadata Scrapers]] 
+     end
+```
+
 ## Development Schedule
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': 
+{ 'primaryColor': '#DDDA4D', 'edgeLabelBackground':'#F7F6DA', 'tertiaryColor': '#D5DEF6'}}}%%
 gantt
     dateFormat  YYYY-MM-DD
-    title       Adding GANTT diagram functionality to mermaid
+    title       Newsletter Concatenation Program Schedule
     excludes    weekends
-    %% (`excludes` accepts specific dates in YYYY-MM-DD format, days of the week ("sunday") or "weekends", but not the word "weekdays".)
-
-    section A section
-    Completed task            :done,    des1, 2014-01-06,2014-01-08
-    Active task               :active,  des2, 2014-01-09, 3d
-    Future task               :         des3, after des2, 5d
-    Future task2              :         des4, after des3, 5d
-
-    section Critical tasks
-    Completed task in the critical line :crit, done, 2014-01-06,24h
-    Implement parser and jison          :crit, done, after des1, 2d
-    Create tests for parser             :crit, active, 3d
-    Future task in critical line        :crit, 5d
-    Create tests for renderer           :2d
-    Add to mermaid                      :1d
-    Functionality added                 :milestone, 2014-01-25, 0d
-
-    section Documentation
-    Describe gantt syntax               :active, a1, after des1, 3d
-    Add gantt diagram to demo page      :after a1  , 20h
-    Add another diagram to demo page    :doc1, after a1  , 48h
-
-    section Last section
-    Describe gantt syntax               :after doc1, 3d
-    Add gantt diagram to demo page      :20h
-    Add another diagram to demo page    :48h
+    
+    todayMarker stroke-width:5px,stroke:#0f0,opacity:0.5
+    
+    section Plan
+    Define problem scope      :done,  scope, 2022-01-06,5d
+    Define target user        :done,  user, 2022-01-06, 5d
+    Draft readme              :done,  readmedraft, after user, 5d
+    Iterate readme            :done,  readmeiterate, after readmedraft, 5d
+    Draft designdoc           :done,  designdocdraft, after readmedraft, 5d
+    Draft architecture        :done,  archituredraft, 2022-02-25, 3d
+    Code architecture         :done,  architurecode, after archituredraft, 3d
+    Draft gantt chart         :done,  ganttdraft, 2022-03-03, 3d
+    Code gantt chart          :done,  ganttcode, after ganttdraft, 3d
+    
+    section Prototype
+    Create sample databases    :done, databasecreate, 2022-01-05, 2d
+    Create filter algorithm    :done, algofiltercreate, 2022-01-10, 3d
+    Iterate filter algorithm   :done, algofilteriterate, algofiltercreate, 4d
+    Create main program        :done, maincreate, 2022-03-10, 3d
+    
+    section Prune
+    Softcode filter algorithm   :active, algofiltersoftcode, 2022-03-15, 3d
+    
+    section Playtest
+    
+    section Polish
+    
+    section Post
 ```
 ## Responsibilities
 - keyed list (uml seq diagram)
