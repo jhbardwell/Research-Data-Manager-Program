@@ -33,26 +33,25 @@ Centralize research documents within a single folder. Design network of article,
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': 
 { 'primaryColor': '#DDDA4D', 'edgeLabelBackground':'#F7F6DA', 'tertiaryColor': '#D5DEF6'}}}%%
-flowchart TD
+flowchart LR
   %%relationships
      buttonenterdata{Enter Data Button}--queues-->evententerdata
      buttonsearchdata{Search Data Button}--queues-->eventsearchdata
-     evententerdata--runs-->fxnenterdatamanual
+     evententerdata--runs-->fxnenterdata
      eventsearchdata--runs-->fxnsearchdata
      formarticle<--dataflow-->databasearticle
      formauthor<--dataflow-->databaseauthor
      formgrant<--dataflow-->databasegrant
      formorganization<--dataflow-->databaseorganization
      fxnenterdata--updates-->DATABASES
-     fxnenterdatamanual--updates-->DATABASES
-     fxnrender--renders-->GUI
-     fxnsearchdata--updates-->GUI
-     webscraperarticle--runs-->fxnenterdata--updates-->databasearticle
-     webscraperauthor--runs-->fxnenterdata--updates-->databaseauthor
+     fxnsearchdata--updates-->FORMS
+     fxnupdatedata--updates-->databasearticle
+     fxnupdatedata--updates-->databaseauthor
+     webscraperarticle--runs-->fxnupdatedata
+     webscraperauthor--runs-->fxnupdatedata
    %% structure
    subgraph MAIN [Main Loop]
       fxnenterdata[Enter Data Function]
-      fxnenterdatamanual[Manual Enter Data Function]
       fxnrender[Render Function]
       fxnsearchdata[Search Data Function]
       fxnupdatedata[Update Data Function]
@@ -62,9 +61,11 @@ flowchart TD
       evententerdata[[Enter Data Event]]
       eventsearchdata[[Search Data Event]]
       end
-   subgraph GUI [GUI]
+   subgraph BUTTONS [Buttons]
       buttonenterdata{Enter Data Button}
       buttonsearchdata{Search Data Button}
+      end
+    subgraph FORMS [Forms]
       formarticle{Article Metadata Form}
       formauthor{Author Metadata Form}
       formgrant{Grant Metadata Form}
