@@ -33,20 +33,34 @@ Centralize research documents within a single folder. Design network of article,
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': 
 { 'primaryColor': '#DDDA4D', 'edgeLabelBackground':'#F7F6DA', 'tertiaryColor': '#D5DEF6'}}}%%
-flowchart LR
+flowchart TD
   %%relationships
-   ddd
+     buttonenterdata{Enter Data Button}--queues-->evententerdata
+     buttonsearchdata{Search Data Button}--queues-->eventsearchdata
+     evententerdata--runs-->fxnenterdatamanual
+     eventsearchdata--runs-->fxnsearchdata
+     formarticle<--dataflow-->databasearticle
+     formauthor<--dataflow-->databaseauthor
+     formgrant<--dataflow-->databasegrant
+     formorganization<--dataflow-->databaseorganization
+     fxnenterdata--updates-->DATABASES
+     fxnenterdatamanual--updates-->DATABASES
+     fxnrender--renders-->GUI
+     fxnsearchdata--updates-->GUI
+     webscraperarticle--runs-->fxnenterdata--updates-->databasearticle
+     webscraperauthor--runs-->fxnenterdata--updates-->databaseauthor
    %% structure
    subgraph MAIN [Main Loop]
-      fxnenterdataauto
-      fxnenterdatamanual
-      fxngarbagecollection
-      fxnrender
-      fxnsearchdataauto
-      fxnupdatedataauto
+      fxnenterdata[Enter Data Function]
+      fxnenterdatamanual[Manual Enter Data Function]
+      fxnrender[Render Function]
+      fxnsearchdata[Search Data Function]
+      fxnupdatedata[Update Data Function]
+      fxngarbagecollection[Garbage Collection Function]
       end
    subgraph EVENTS [Event Queue]
-      event
+      evententerdata[[Enter Data Event]]
+      eventsearchdata[[Search Data Event]]
       end
    subgraph GUI [GUI]
       buttonenterdata{Enter Data Button}
@@ -63,8 +77,8 @@ flowchart LR
      databasegrant[(Grant Metadata)]
      end
    subgraph WEBSCRAPERS [Webscrapers]
-     articlescraper[[Article Metadata Scrapers]]
-     authorcraper[[Author Metadata Scrapers]] 
+     webscraperarticle[[Article Metadata Scrapers]]
+     webscraperauthor[[Author Metadata Scrapers]] 
      end
 ```
 
@@ -80,18 +94,18 @@ gantt
     todayMarker stroke-width:5px,stroke:#0f0,opacity:0.5
     
     section Plan
-    Define problem scope      :done,  scope, 2022-01-06,5d
-    Define target user        :done,  user, 2022-01-06, 5d
-    Draft readme              :done,  readmedraft, after user, 5d
-    Iterate readme            :done,  readmeiterate, after readmedraft, 5d
+    Define problem scope      :done,  scope, 2021-10-06,5d
+    Define target user        :done,  user, 2021-10-08, 5d
+    Draft readme              :done,  readmedraft, after user, 6d
+    Iterate readme            :done,  readmeiterate, 2021-11-16, 5d
     Draft designdoc           :done,  designdocdraft, after readmedraft, 5d
-    Draft architecture        :done,  archituredraft, 2022-02-25, 3d
-    Code architecture         :done,  architurecode, after archituredraft, 3d
-    Draft gantt chart         :done,  ganttdraft, 2022-03-03, 3d
-    Code gantt chart          :done,  ganttcode, after ganttdraft, 3d
+    Draft architecture        :done,  archituredraft, 2021-12-02, 3d
+    Code architecture         :done,  architurecode, 2022-03-09, 3d
+    Draft gantt chart         :done,  ganttdraft, 2021-11-25, 4d
+    Code gantt chart          :done,  ganttcode, 2022-03-10, 3d
     
     section Prototype
-    Create sample databases    :done, databasecreate, 2022-01-05, 2d
+    Create sample databases    :done, databasecreate, 2021-11-05, 15d
     Create filter algorithm    :done, algofiltercreate, 2022-01-10, 3d
     Iterate filter algorithm   :done, algofilteriterate, algofiltercreate, 4d
     Create main program        :done, maincreate, 2022-03-10, 3d
