@@ -106,6 +106,7 @@ gantt
     Code gantt chart            :done,  ganttcode, 2022-03-10, 3d
     
     section Prototype
+    Catalog research articles   :active, pdfcatalog, 2021-10-01, 2022-01-05
     Create author database      :done, authordbcreate, 2021-11-05, 2021-12-30
     Create article database     :done, articledbcreate, 2021-11-05, 2021-12-30
     Create org database         :done, organizationdbcreate, 2021-11-05, 2021-12-30
