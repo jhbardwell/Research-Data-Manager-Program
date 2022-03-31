@@ -134,3 +134,4 @@ gantt
 - ddddd
 ## Reference Code
 - [Template Literals](https://www.youtube.com/watch?v=DG4obitDvUA&t=2069s)
+- [Image File Pixel Encoding](https://www.youtube.com/watch?v=RCVxXgJ8xSk&t=842s)
